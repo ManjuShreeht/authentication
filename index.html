@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header start-->
+    <header class="header">
+        <div class="flex">
+            <h2>classss</h2>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="active" href="#home" id="homeactive" onclick="clickhome()">Home</a></li>
+                    <li><a href="#reg" id="regactive" onclick="clickreg()">Registration</a></li>
+                    <li><a href="#log" id="logactive" onclick="clicklog()">Login</a></li>
+                </ul>
+                <nav>
+        </div>
+    </header>
+
+
+    <!--header end-->
+    <!-- section start-->
+
+    <section id="home-form" class="sec">
+        <div class="text">
+            <h1>Welcome To Our Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit corrupti aperiam ipsa, pariatur incidunt maxime modi asperiores, labore ducimus iusto at a aut reprehenderit quam nemo nostrum. Atque, quia!</p>
+        </div>
+        <div class="flex1">
+            <a href="#reg" onclick="clickreg()">Register</a>
+            <a href="#log " onclick="clicklog()">Login</a>
+        </div>
+
+    </section>
+
+    <!-- section end-->
+
+    <!-- register form start-->
+    <section id="register-form" class="sec1">
+        <h1>Registeration Form</h1>
+        <div class="container">
+            <form id="form1" method="post">
+                <label for="first_name">First Name</label>
+                <input type="text" name="fname" id="first_name" placeholder="Enter your name" style="margin-left:30px; margin-top:10px;" autocomplete="off" value=""><br>
+                <span id="span">Please Enter valid name</span>
+                <br>
+
+                <label for="last name">Last Name</label>
+                <input type="text" name="lname" id="last name" placeholder="Enter your  Last name" style="margin-left:30px;" autocomplete="off">
+                <br>
+                <span id="span1" style="padding-left:20px; padding-bottom:10px;">Please Enter valid name</span>
+                <br>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="abc@gmail.com" style="margin-left:70px;" autocomplete="off">
+                <br>
+                <span id="span2" style="padding-left:20px; padding-bottom:10px;">Please Enter valid email</span>
+                <br>
+
+                <label for="password">Password</label>
+                <input type="password" name="pass" id="password" placeholder="password" style="margin-left:45px;" autocomplete="off">
+                <br>
+
+                <span id="span3" style="padding-left:20px; padding-bottom:10px;">Please enter strong password</span>
+                <br>
+
+
+                <label for="password1"> Confirm Password</label>
+                <input type="password" name="confirm pass" id="password1" placeholder="confirm password " style="margin-left:30px; margin-top:5px; margin-bottom:10px; ">
+                <br>
+
+                <span id="span4" style="padding-left:20px; padding-bottom:10px;">Password not matching </span>
+                <br>
+
+
+                <!--     <label for="gender" style="margin-left:2px;"> Gender</label>
+                <input type="radio" name="male" id="male" id="gender" value="male" style="margin-left:60px; margin-bottom:20px">
+                <label>Male</label>
+                <input type="radio" name="male" id="female" id="gender" value="male">
+                <label>Female</label>
+
+                <br>
+
+                <span id=span style="padding-left:20px; padding-bottom:10px;">Please Enter valid name</span>
+                <br>
+
+
+
+                <label for="state">State</label>
+                <select id="state" name="state" style="margin-left:80px;">
+                    <option value="choose" name="none">Choose...</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="goa">Goa</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="karnataka">karnataka</option>
+                    <option value="karnataka">karnataka</option>
+                </select>
+                <br>
+
+                <span id=span style="padding-left:20px; padding-bottom:10px;">Please Enter valid name</span>
+                <br>
+
+
+                <label for="textarea">Address</label>
+                <textarea id="textarea" style="width:220px;height:60px;margin-top: 20px; margin-left:20px;border-radius:5px;"></textarea>
+                <br> -->
+                <input type="button" value="submit" id="btn" onclick="validate()">
+            </form>
+
+
+        </div>
+    </section>
+
+    <!-- register form end-->
+
+    <!--login form start-->
+    <section id="login-form" class="sec2">
+        <h1>Login Form</h1>
+        <div class="container1">
+            <form id="form2" method="post">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="abc@gmail.com"><br>
+                <label for="login-password">Password</label>
+                <input type="password" name="password" id="login-password"><br>
+                <input type="button" value="Login" id="btn" onclick="login()">
+            </form>
+        </div>
+    </section>
+    <!--login form start-->
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

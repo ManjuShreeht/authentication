@@ -207,7 +207,7 @@ form select option {
     top: 50px;
 }
 
-@media only screen and (max-width:845px) {
+@media only screen and (max-width:795px) {
     .sec {
         background-color: green;
     }
